@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>
+            PLEASE ENTER YOUR DETAILS FOR OUR WEBSITE!</h2>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            label:hover{
+                font-size: 40px
+            }
+            input:hover{
+                font-size: 40px
+            }
+        </style>
+    </head>
+    <body>
+       
+        <form action="post" enctype="multipart/form-data" method = "post">
+            <fieldset>
+                <legend>Your Face</legend>
+
+                <label for = "preview">Your image</label>
+                <input id ="preview" name = "preview" type="file" required><br>
+                <label for="image">Image preview</label><img id="preview">
+            </fieldset>
+            <fieldset>
+                <legend>Your General Details</legend>
+                <label for="name">Name:</label>
+                <input id = "name" required name="name" type="text" required><br>
+                <label for="gender" required>Gender</label>
+                <input type="radio" name="gender" id="gender">Male
+                <input type="radio" name="gender" id="gender">Female<br>
+                <label for="age">Age</label>
+                <input name="age" id="age" type="number" required><br>
+                <label for="DOB">Date of Birth:</label>
+                <input name="DOB" id="DOB" type="date"><br>
+                <label for="color">Favorite Color</label>
+                <input name="color" id="color" type="color"><br>
+                <label for="country">Which Country:</label>
+                <select id="country" name="country">
+                    <option value=""></option>
+                    <option value="india">India</option>
+                    <option value="US">US</option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <label for="email"> Email</label>
+                <input id="email" name="email" type="email" required><br>
+                <label for="tele"> Number:</label>
+                <input id="tele" name="tele" type="tel"><br>
+                <label for="address">Adress:</label>
+                <textarea id="address" name="address"></textarea>
+            </fieldset>
+            <input type=submit>
+        </form>
+        <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+    </body>
+</html>
